@@ -7,6 +7,7 @@ export async function GET(){
     const todos = await TodoModel.find()
     return NextResponse.json(todos)
 }
+
 export async function POST(req){
     await connectDB()
     const {text} = await req.json()
@@ -14,7 +15,5 @@ export async function POST(req){
     const Todo = new TodoModel({text:text})
     Todo.save()
     return NextResponse.json({result:'ok'})
-
-    
 }
 

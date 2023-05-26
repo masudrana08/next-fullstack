@@ -6,22 +6,6 @@ export default function Todo() {
   const [text, setText] = useState("");
   const handleSubmit = () => {
     console.log('clicked');
-    // const url = server+'/api/todo';
-    // const data = {text};
-    // const config = {
-    //     headers: {
-    //         'Content-Type': 'application/json'
-    //     }
-    // }
-    // axios.post(url, data, config)
-    // .then(response => {
-    //     // Handle the response
-    //     console.log(response.data);
-    // })
-    // .catch(error => {
-    //     // Handle any errors that occur during the request
-    //     console.error(error);
-    // })
     fetch(server+"/api/todo", {
         method:'POST',
         headers: { 

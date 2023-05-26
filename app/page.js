@@ -4,7 +4,7 @@ import { server } from "@config";
 export default async function Home() {
   const res = await fetch(server+"/api/todo", {cache: 'no-store'})
   const data = await res.json()
-  console.log(data, 'todos data');
+
   return (
     <div>
       <Todo />
