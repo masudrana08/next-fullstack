@@ -7,14 +7,15 @@ export default async function Home() {
 
   return (
     <div>
-      <Todo />
+      {/* <Todo />
     {
       data.map(todo=>{
         return(
           <div key={todo._id}>{todo.text}</div>
         )
       })
-    }
+    } */}
+    hello world
     </div>
   )
 }
